@@ -1,0 +1,24 @@
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card-header {
+    margin-bottom: 8px;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.book-author,
+.book-isbn,
+.book-publication {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
