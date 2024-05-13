@@ -8,7 +8,11 @@ const AuthorForm = ({ initialValues, onSubmit }) => {
             onSubmit={onSubmit}
             validate={(values) => {
                 const errors = {};
-                // Add validation logic here
+                if (!values.name) {
+                    errors.name = 'Name is required';
+                }
+
+
                 return errors;
             }}
         >
@@ -17,8 +21,16 @@ const AuthorForm = ({ initialValues, onSubmit }) => {
                     <label htmlFor="name">Name</label>
                     <Field type="text" id="name" name="name" />
                     <ErrorMessage name="name" component="div" />
+                </div><div>
+                    <label htmlFor="birthDate">DOB</label>
+                    <Field type="date" id="birthDate" name="birthDate" />
+                    <ErrorMessage name="birthDate" component="div" />
+                </div><div>
+                    <label htmlFor="biography">Biography</label>
+                    <Field type="text" id="biography" name="biography" />
+                    <ErrorMessage name="biography" component="div" />
                 </div>
-                {/* Add fields for other author details here */}
+
                 <button type="submit">Submit</button>
             </Form>
         </Formik>
