@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000'; // Update with your backend URL
+const BASE_URL = 'https://formik-library-backend.onrender.com'; // Update with your backend URL
 
 const api = axios.create({
     baseURL: `${BASE_URL}/api/author`,
