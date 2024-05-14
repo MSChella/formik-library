@@ -13,10 +13,10 @@ const BookCard = ({ book, onEdit, onDelete }) => {
         onEdit(book); // Call the onEdit function and pass the book data
     };
 
-    const handleDeleteClick = () => {
-        deleteBook();
-        onDelete(book); // Call the onDelete function and pass the book data
-    };
+    // const handleDeleteClick = () => {
+    //     deleteBook();
+    //     onDelete(book); // Call the onDelete function and pass the book data
+    // };
 
     return (
         <div className="book-card">

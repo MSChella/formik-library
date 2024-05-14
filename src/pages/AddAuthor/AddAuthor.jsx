@@ -2,7 +2,7 @@ import React from 'react';
 import AuthorForm from '../../components/AuthorForm/AuthorForm';
 import { addAuthor } from '../../APIServices/authors';
 
-const AddAuthor = ({ }) => {
+const AddAuthor = () => {
 
 
 
